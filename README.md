@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 황세연 포트폴리오
 
-## Getting Started
+서울대학교 언론정보학과 석사과정 황세연의 포트폴리오 웹사이트입니다.
 
-First, run the development server:
+## 기술 스택
+
+- [Next.js](https://nextjs.org/) 16 (App Router)
+- [Tailwind CSS](https://tailwindcss.com/) 4
+- [TypeScript](https://www.typescriptlang.org/)
+
+## 로컬 실행
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+브라우저에서 [http://localhost:3000](http://localhost:3000)을 열어 확인할 수 있습니다.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Vercel 배포
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. GitHub 저장소에 코드를 푸시합니다.
+2. [Vercel](https://vercel.com)에서 새 프로젝트를 생성하고 해당 저장소를 연결합니다.
+3. 프레임워크는 Next.js로 자동 감지되며, 별도 설정 없이 배포할 수 있습니다.
 
-## Learn More
+## 프로젝트 구조
 
-To learn more about Next.js, take a look at the following resources:
+```
+src/
+├── app/           # Next.js App Router 페이지
+├── components/    # UI 컴포넌트
+└── data/          # 포트폴리오 데이터
+docs/              # 원본 마크다운 문서
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 콘텐츠 수정
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+포트폴리오 내용은 `src/data/portfolio.ts` 파일에서 수정할 수 있습니다. 원본 문서는 `docs/snu-seyeon-portfolio.md`에 있습니다.
