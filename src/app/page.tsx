@@ -10,12 +10,12 @@ export default function Home() {
     <main className="min-h-screen bg-white">
       <Header />
       <Hero />
+      <AboutSection />
       <section id="experience">
         {workExperience.map((project) => (
           <ProjectRow key={project.id} project={project} />
         ))}
       </section>
-      <AboutSection />
       <Footer />
     </main>
   );

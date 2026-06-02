@@ -11,7 +11,7 @@ function StarRating({ level }: { level: number }) {
 
 export default function AboutSection() {
   return (
-    <section className="border-b border-neutral-200 px-6 py-12 md:px-12 md:py-16">
+    <section id="about" className="border-b border-neutral-200 px-6 py-12 md:px-12 md:py-16">
       <div className="grid gap-12 md:grid-cols-3 md:gap-16">
         <div>
           <h2 className="mb-6 text-sm font-medium uppercase tracking-widest text-neutral-400">

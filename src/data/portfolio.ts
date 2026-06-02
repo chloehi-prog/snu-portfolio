@@ -3,7 +3,7 @@ export const profile = {
   role: "GRADUATE STUDENT",
   location: "Seoul, South Korea",
   bio: "서울대학교 언론정보학과를 졸업하고 글로벌 엔터테인먼트 기업에서 아티스트 마케팅 실무를 경험했습니다. 이를 바탕으로 현재 언론정보학과 석사과정에서 K-Pop 팬덤 연구를 진행 중입니다. 실무 경험과 학문적 접근을 조합하여 문화 현상과 트렌드를 분석하고 있으며, 데이터 기반 연구와 국내외 다양한 협업에 관심을 가지고 있습니다.",
-  keywords: ["Research", "K-Pop", "Media", "Marketing"],
+  keywords: ["Portfolio", "Research", "Media", "Marketing"],
 };
 
 export const contact = {

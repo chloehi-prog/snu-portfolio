@@ -16,8 +16,8 @@ export default function Hero() {
           {profile.bio}
         </p>
         <a
-          href="#experience"
-          aria-label="경력 섹션으로 이동"
+          href="#about"
+          aria-label="소개 섹션으로 이동"
           className="flex h-12 w-12 shrink-0 items-center justify-center self-end border border-neutral-300 transition-colors hover:border-neutral-900 md:self-auto"
         >
           <svg
