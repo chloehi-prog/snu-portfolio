@@ -8,11 +8,11 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "황세연 | Portfolio",
+  title: "Seyeon Hwang | Portfolio",
   description:
     "서울대학교 언론정보학과 석사과정. 미디어·문화 연구 및 글로벌 마케팅 경험을 담은 포트폴리오.",
   openGraph: {
-    title: "황세연 | Portfolio",
+    title: "Seyeon Hwang | Portfolio",
     description:
       "서울대학교 언론정보학과 석사과정. 미디어·문화 연구 및 글로벌 마케팅 경험을 담은 포트폴리오.",
     type: "website",

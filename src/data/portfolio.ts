@@ -1,5 +1,5 @@
 export const profile = {
-  name: "황세연",
+  name: "Seyeon Hwang",
   role: "GRADUATE STUDENT",
   location: "Seoul, South Korea",
   bio: "서울대학교 언론정보학과를 졸업하고 글로벌 엔터테인먼트 기업에서 아티스트 마케팅 실무를 경험했습니다. 이를 바탕으로 현재 언론정보학과 석사과정에서 K-Pop 팬덤 연구를 진행 중입니다. 실무 경험과 학문적 접근을 조합하여 문화 현상과 트렌드를 분석하고 있으며, 데이터 기반 연구와 국내외 다양한 협업에 관심을 가지고 있습니다.",
@@ -19,19 +19,10 @@ export type WorkExperience = {
   description: string;
   bgColor: string;
   accentColor: string;
+  videoUrl?: string;
 };
 
 export const workExperience: WorkExperience[] = [
-  {
-    id: "jyp",
-    company: "JYP엔터테인먼트",
-    role: "마케팅팀",
-    period: "2025.03 – 2025.07",
-    description:
-      "아티스트 앨범 및 콘텐츠 프로모션, 글로벌 협업, 경쟁사 리서치 등 마케팅 전반을 담당함.",
-    bgColor: "#1e293b",
-    accentColor: "#3b82f6",
-  },
   {
     id: "bighit",
     company: "BIGHIT MUSIC",
@@ -41,6 +32,17 @@ export const workExperience: WorkExperience[] = [
       "BTS 등 아티스트의 중장기·해외 마케팅 전략 수립 및 앨범/미디어 프로모션 실무를 수행함.",
     bgColor: "#e8e8e8",
     accentColor: "#171717",
+    videoUrl: "https://www.youtube.com/embed/geHuX7E3NX8",
+  },
+  {
+    id: "jyp",
+    company: "JYPE",
+    role: "마케팅팀",
+    period: "2025.03 – 2025.07",
+    description:
+      "아티스트 앨범 및 콘텐츠 프로모션, 글로벌 협업, 경쟁사 리서치 등 마케팅 전반을 담당함.",
+    bgColor: "#1e293b",
+    accentColor: "#3b82f6",
   },
   {
     id: "naver",

@@ -4,7 +4,24 @@ type ProjectRowProps = {
   project: WorkExperience;
 };
 
-function DeviceMockup({ project }: { project: WorkExperience }) {
+function ProjectMedia({ project }: { project: WorkExperience }) {
+  if (project.videoUrl) {
+    return (
+      <div
+        className="relative aspect-[16/10] w-full overflow-hidden rounded-sm"
+        style={{ backgroundColor: project.bgColor }}
+      >
+        <iframe
+          src={project.videoUrl}
+          title={`${project.company} project video`}
+          className="absolute inset-0 h-full w-full"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen
+        />
+      </div>
+    );
+  }
+
   const isDark = project.bgColor === "#1e293b";
 
   return (
@@ -75,7 +92,7 @@ export default function ProjectRow({ project }: ProjectRowProps) {
               </svg>
             </span>
           </div>
-          <DeviceMockup project={project} />
+          <ProjectMedia project={project} />
         </div>
       </div>
     </article>
